@@ -1,0 +1,16 @@
+* Create a constructor that accepts three arguments: 
+the diffusion coefficient alpha (of type T), 
+the number of points per dimension m (of type int) and 
+the time-step size dt (of type T). 
+The constructor must create the iteration matrix M 
+given in the introduction and store the result as an attribute with type Matrix<T>.
+
+* Create a method Vector<T> exact(T t) const 
+that returns the exact solution at time t evaluated 
+at all interior grid points (see introduction).
+
+* Create a method Vector<T> solve(T t) const 
+that solves the initial boundary value problem 
+given in the introduction using the procedure 
+given at the end of the introduction until time t and 
+returns the numerical solution at the last time step.   

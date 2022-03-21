@@ -1,0 +1,22 @@
+whereby the Vector’s elements are of type T. The Vector class must provide the following functionality:
+
+Constructors and destructor
+
+1. A default constructor that sets the length to zero.
+2. A copy constructor and a move constructor that creates a Vector from another Vector.
+3. A constructor that takes a length as an argument and allocates the internal data structures accordingly.
+4. A constructor that takes an initialiser list representing the contents of this Vector, allocates the internal 
+data structures and initialises the Vector’s content accordingly.
+5. A destructor.
+
+Operators and functions
+
+1. A copy assignment operator and a move assignment operator from another Vector.
+2. An operator[](int i) that returns a reference to the i-th entry of the vector. Implement an overload of this operator that returns a constant reference. 
+Both operators can be used to access the entries in functions that are implemented outside the Vector class.
+3. Arithmetic operators operator+ and operator- to add and subtract two Vectors. These operators must support Vectors of different types, 
+whereby the resulting Vector has to be of the type that dominates (e.g., double dominates float). If the Vectors have different lengths, 
+all operators must throw an exception.
+4. Arithmetic operators operator* between a scalar and a Vector (w=s⋅v) and a Vector and a scalar (w=v⋅s), 
+whereby the scalar and the Vector can have different types and the resulting Vector must be of the dominating type.
+5. A function len that returns the length of the Vector. This function can be used to retrieve the length in functions that are implemented outside the Vector class.
